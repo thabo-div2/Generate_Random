@@ -60,5 +60,11 @@ clear.place(x=100, y=150)
 fin = Button(myframe, text="Exit", command=exit_btn)
 fin.place(x=170, y=150)
 
+# Image
+canvas = Canvas(myframe, width=400, height=300)
+canvas.pack(side=BOTTOM)
+img = PhotoImage(file="index.png")
+canvas.create_image(20, 20, anchor=NW, image=img)
+
 
 window.mainloop()
